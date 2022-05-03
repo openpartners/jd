@@ -39,3 +39,36 @@ SKST
 UPDATE `mod11_image_lang` SET `legend`='Podziękowanie dla wychowawcy na zakończenie szkoły, roku szkolnego, przedszkola, z okazji studniówki, z okazji Dnia Nauczyciela' WHERE legend LIKE ('%SKST%') LIMIT 100;
 SKPW
 UPDATE `mod11_image_lang` SET `legend`='Podziękowanie dla wychowawcy na zakończenie szkoły, roku szkolnego, przedszkola, z okazji studniówki, z okazji Dnia Nauczyciela' WHERE legend LIKE ('%SKPW%') LIMIT 100;
+
+
+----
+
+
+Zmieniłem:
+
+21771 produktów z atrybutami za 14,99  
+'12.186992' ==> '16.252033'
+
+SELECT * FROM `mod11_product_attribute_shop` WHERE `price` = '12.186992';
+UPDATE `mod11_product_attribute_shop` SET `price`='16.252033' WHERE `price`='12.186992';
+
+SELECT * FROM `mod11_product_attribute` WHERE `price` = '12.186993';
+UPDATE `mod11_product_attribute` SET `price`='16.252033' WHERE `price`='12.186993';
+
+
+UPDATE `mod11_attribute_lang` SET `name` = '(+19,99zł) dołaczyć smoczek prawdziwy' WHERE `mod11_attribute_lang`.`id_attribute` = 82 AND `mod11_attribute_lang`.`id_lang` = 1;
+
+
+UPDATE `mod11_attribute_lang` SET `name` = '(+19,99zł) dołaczyć smoczek prawdziwy' WHERE `mod11_attribute_lang`.`id_attribute` = 82 AND `mod11_attribute_lang`.`id_lang` = 1;
+
+
+Stojaczki i zapachy:
+było 4390 produktów 
+8.121951 ==> '16.252034'
+
+SELECT * FROM `mod11_product_attribute_shop` WHERE `price` = '8.121951';
+SELECT * FROM `mod11_product_attribute` WHERE `price` = '8.121951';
+
+UPDATE `mod11_product_attribute_shop` SET `price`='16.252034' WHERE `price`='8.121951';
+UPDATE `mod11_product_attribute` SET `price`='16.252034' WHERE `price`='8.121951';
+
